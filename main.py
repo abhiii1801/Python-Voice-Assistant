@@ -18,7 +18,7 @@ import os
 recognizer = sr.Recognizer()
 engine = pyttsx3.init()
 engine.setProperty('rate', 150)
-openai.api_key = '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'
+openai.api_key = ''
 
 def user_feedback(result):
     print(f'\n{result}\n')
