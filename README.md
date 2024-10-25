@@ -1,18 +1,35 @@
-# python-assistant
+# Voice Assistant with Automation Features 🎤🤖
 
-The provided Python script integrates several libraries and web technologies to create a voice-controlled virtual assistant. The assistant is designed to execute various tasks based on user voice commands. The script encompasses functionalities such as weather information retrieval, application launching, YouTube music playback, website opening, and interaction with OpenAI's GPT-3.5 for natural language processing.
+## Features
 
-The script starts by importing necessary libraries, including speech_recognition for voice recognition, selenium for web automation, pyautogui for GUI automation, pyttsx3 for text-to-speech, and openai for language processing.
+- **Voice Commands**: Recognizes commands via microphone input.
+- **Weather Information**: Retrieves and speaks the weather for a specified city.
+- **Open Applications**: Launches desktop applications based on user commands.
+- **Play Videos**: Searches and plays videos from YouTube.
+- **Web Navigation**: Opens specified websites.
+- **ChatGPT Interaction**: Uses OpenAI's API to respond to user queries.
+- **Conversation History**: Logs interactions with timestamps for future reference.
+- **Volume Control**: Adjusts the system volume through voice commands.
+- **Timer Functionality**: Sets and counts down a timer based on voice input.
 
-Key components are initialized, including the speech recognition object, the text-to-speech engine, and the OpenAI API key. User feedback is managed through functions like user_feedback, and conversations are logged in a text file using append_to_history.
+## Usage
+- Run the assistant:
+    -python assistant.py
+- Speak commands prefixed with "python". For example:
 
-Specific functionalities include weather information retrieval using Selenium to interact with an AccuWeather website, opening applications specified by the user, playing music from YouTube, and opening websites. The script also interacts with OpenAI's GPT-3.5 for generating responses based on user prompts.
+    - "python what's the weather in New Delhi"
+    - "python open Notepad"
+    - "python play Despacito"
+    - "python what's the time"
+- The assistant will respond to your queries, execute the commands, and maintain a conversation history.
 
-Voice commands are verified using the verify function, which identifies the type of command based on the user's input. The input_audio function captures voice input using a microphone, and the commands function interprets specific actions such as stopping the assistant, pausing, setting timers, adjusting volume, or checking the current time.
+## Requirements
 
-The main loop continuously captures voice input, processes commands, and interacts with the assistant's functionalities based on user prompts. The script provides a dynamic and interactive voice-controlled assistant, offering a range of functionalities to the user.
-
-
-
-
-
+- Python 3.7 or higher
+- Libraries:
+  - `speech_recognition`
+  - `selenium`
+  - `pyautogui`
+  - `pyttsx3`
+  - `openai`
+  - `pycaw`
